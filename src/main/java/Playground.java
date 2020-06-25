@@ -12,10 +12,10 @@ import java.io.OutputStream;
 import java.util.Properties;
 import java.util.StringJoiner;
 
-public class VideoCompiler {
+public class Playground {
 
     public static void main(String args[]) throws IOException{
-        VideoCompiler comp = new VideoCompiler();
+        Playground comp = new Playground();
         comp.convertVideos();
 //        comp.addScore();
 //        comp.combineVideos();
@@ -25,8 +25,8 @@ public class VideoCompiler {
         final FFmpeg ffmpeg = new FFmpeg();
         final FFprobe ffprobe = new FFprobe();
 
-        String testInPath = "src\\\\main\\\\resources\\\\00003.MTS";
-        String testOutPath = "src\\\\main\\\\resources\\\\00003.mp4";
+        String testInPath = "Footy\\\\PDI1\\\\00003.MTS";
+        String testOutPath = "Footy\\\\ConvertedPDI1\\\\resources\\\\00003.mp4";
 
 
         FFmpegBuilder builder =
